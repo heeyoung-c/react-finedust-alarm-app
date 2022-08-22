@@ -8,6 +8,7 @@ import store from './modules'
 
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/theme'
+import GlobalStyle from './styles/globalStyle'
 
 import MyRegion from './pages/MyRegion'
 import EntireRegion from './pages/EntireRegion'
@@ -18,6 +19,7 @@ function App() {
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
+        <GlobalStyle />
         <Routes>
           <Route path='/' element={<MyRegion />} />
           <Route path='my-region' element={<MyRegion />} />
