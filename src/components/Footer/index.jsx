@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
 import * as S from './style'
+import { BsFillBookmarkStarFill } from 'react-icons/bs'
+import { IoHomeSharp } from 'react-icons/io5'
 
 function Footer() {
   return (
     <S.Footer>
-      <Link to='/my-region'>내 지역 | </Link>
-      <Link to='/entire-region'>전체 시·도 | </Link>
-      <Link to='/bookmark'>즐겨찾기</Link>
+      <S.CustomLink to='/my-region'>{IoHomeSharp()}</S.CustomLink>
+      <S.CustomLink to='/entire-region'>전체 시·도</S.CustomLink>
+      <S.CustomLink to='/bookmark'>{BsFillBookmarkStarFill()}</S.CustomLink>
     </S.Footer>
   )
 }

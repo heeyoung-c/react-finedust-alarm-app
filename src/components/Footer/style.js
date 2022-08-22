@@ -1,14 +1,22 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Footer = styled.footer`
+  ${({ theme }) => theme.common.flexAround};
+
   position: fixed;
-  border: 1px solid red;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   bottom: 0;
-  background-color: lightgray;
-
+  background-color: ${({ theme }) => theme.palette.white};
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  text-decoration: none;
+  font-family: 'NotoSansBold';
   font-size: ${({ theme }) => theme.fontSizes.title};
+`
 
-  ${({ theme }) => theme.common.flexCenter};
+export const CustomLink = styled(props => <Link {...props} />)`
+  color: ${({ theme }) => theme.palette.primary};
+  text-decoration: none;
 `
