@@ -10,8 +10,7 @@
 <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/> 
 <img src="https://img.shields.io/badge/REDUX-764ABC?style=for-the-badge&logo=Redux&logoColor=white"/> 
 <img src="https://camo.githubusercontent.com/38547f500d8d549765a404fbbc093e03e47a4762502cb7e56c645d1511a9f0e5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5354594c45442d434f4d504f4e454e54532d4442373039333f7374796c653d666f722d7468652d6261646765266c6f676f3d7374796c65642d636f6d706f6e656e7473266c6f676f436f6c6f723d7768697465">
-<img src="https://img.shields.io/badge/REDUX THUNK-764ABC?style=for-the-badge&logo=Redux&logoColor=white"/> 
-<img src="https://img.shields.io/badge/VERCEL-000000?style=for-the-badge&logo=Vercel&logoColor=white"/>
+<img src="https://img.shields.io/badge/REDUX THUNK-764ABC?style=for-the-badge&logo=Redux&logoColor=white"/>
 
 ## 주요 기능
 
