@@ -5,6 +5,9 @@
 
 ## 배포 주소
 
+[미세먼지 알리미](https://dainty-starship-1fd93b.netlify.app)  
+`현재 api 요청 304 상태 코드 에러가 나고 있어서 정상적인 사이트 활용이 불가능하며, 해결중입니다`
+
 ## 📑기술 스택
 
 <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/> 
