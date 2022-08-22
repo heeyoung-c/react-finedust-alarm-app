@@ -1,10 +1,11 @@
 import React from 'react'
+import Card from '../../components/Card'
 
 const BookMark = () => {
   return (
-    <div>
-      <p>this is my BookMark</p>
-    </div>
+    <>
+      <Card renderType='book-mark'></Card>
+    </>
   )
 }
 

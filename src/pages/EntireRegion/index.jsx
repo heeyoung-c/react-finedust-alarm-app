@@ -1,11 +1,17 @@
 import React from 'react'
 import SelectSido from '../../components/SelectSido'
+import Card from '../../components/Card'
+
+import * as S from './style'
 
 const EntireRegion = () => {
   return (
-    <div>
-      <SelectSido></SelectSido>
-    </div>
+    <>
+      <S.Container>
+        <SelectSido></SelectSido>
+      </S.Container>
+      <Card renderType='entire-region'></Card>
+    </>
   )
 }
 
