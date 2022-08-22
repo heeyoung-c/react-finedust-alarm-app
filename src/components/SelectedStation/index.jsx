@@ -1,32 +1,32 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import * as S from './style'
 import { useSelector, useDispatch } from 'react-redux'
-import { changeSelectedStations } from '../../modules/fineDust'
-
-import { FINE_DUST_DATA } from '../../context/fineDustData'
+import { changeSelectedStation } from '../../modules/selectedValue'
 
 const SelectedStation = () => {
-  const selectedSido = useSelector(state => state.selectedSido)
-  console.log(selectedSido)
+  const { selectedStation, selectedStations } = useSelector(
+    state => state.selectedValue,
+  )
   const dispatch = useDispatch()
-  const ttt = useSelector(state => state.selectedStations)
 
-  const selectedStations = FINE_DUST_DATA.response.body.items
-    .filter(item => item.sidoName === selectedSido)
-    .map(sido => sido.stationName)
+  const changeStationHandler = e => {
+    const selectedStationName = e.target.value
 
-  // useEffect(() => {
-  //   console.log('변한다')
-  // }, [selectedSido])
-
-  console.log(ttt)
+    // 사용자가 지정한 stationName 을 토대로 station 정보 저장하기
+    const selectedStation = selectedStations.filter(
+      station => station.stationName === selectedStationName,
+    )
+    dispatch(changeSelectedStation(...selectedStation))
+  }
   return (
     <>
-      <S.Select>
-        {selectedStations.map(stationName => (
-          <option key={stationName}>
-            {stationName || '지역을 선택해주세요'}
-            {/* 이 부분 질문하기(지역선택 어떻게 나오게 할 지) */}
+      <S.Select
+        defaultValue={selectedStation.stationName}
+        onChange={changeStationHandler}
+      >
+        {selectedStations.map(({ stationName }) => (
+          <option key={stationName} value={stationName}>
+            {stationName}
           </option>
         ))}
       </S.Select>

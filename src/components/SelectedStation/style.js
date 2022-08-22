@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import { Form } from 'react-bootstrap'
 
 export const Select = styled(Form.Select)`
-  min-width: 10rem;
+  min-width: 12rem;
   max-width: max-content;
   height: 6rem;
-  border: 0.1rem solid red;
 
+  font-family: 'NotoSansBold';
   font-size: ${({ theme }) => theme.fontSizes.title};
 `
